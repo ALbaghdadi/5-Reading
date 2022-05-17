@@ -12,7 +12,7 @@ float currentAC;
 float voltageDC;
 float currentDC;
 
-IPAddress server(172,23,174,101);
+IPAddress server(172,123,174,101);
 //char server[] = "192.168.0.100";
 IPAddress ip(10,5,52,2); 
 
@@ -96,7 +96,7 @@ void loop(){
     client.print(" ");      //SPACE BEFORE HTTP/1.1
     client.print("HTTP/1.1");
     client.println();
-    client.println("Host: 172.23.174.101");
+    client.println("Host: 172.123.174.101");
     client.println("Connection: close");
     client.println();
   } else {
